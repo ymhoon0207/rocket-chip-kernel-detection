@@ -1,0 +1,9 @@
+[submodule "riscv-tools-data-rando"]
+	path = riscv-tools-data-rando
+	url = https://github.com/jeffy1009/riscv-tools-data-rando.git
+[submodule "rocket-chip-data-rando"]
+	path = rocket-chip-data-rando
+	url = https://github.com/jeffy1009/rocket-chip-data-rando.git
+[submodule "fpga-zynq-data-rando"]
+	path = fpga-zynq-data-rando
+	url = https://github.com/jeffy1009/fpga-zynq-data-rando.git
