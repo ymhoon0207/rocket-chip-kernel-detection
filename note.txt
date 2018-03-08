@@ -1,0 +1,2 @@
+1.
+2. This runs all benches in spec 2000 except perlbmk with test input and perlbmk with makerand

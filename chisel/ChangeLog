@@ -1,0 +1,21 @@
+ChangeLog for Chisel v2.2.32
+
+#627 Dump vcd in module->clock()
+#624 Try to avoid IndexOutOfBoundsException at the start of simulation.
+#623 Print warning and return random for peeks of uwritten signales.
+#621 Use low-level Extract instead of implementing it with shifts and masks.
+#609 Fix incorrect VCD.
+ Bump dependent package versions.
+ Update copyright notice (date).
+ Add ScalaStyle changes.
+ Include class hierarchy diagrams in scaladoc
+ Add support for non-JUint tests.
+ Removed new line in tester to avoid lots of blank lines for multiple steps.
+ Fixeds are signed nodes too.
+ Treat chisel3 compatibility warnings as errors.
+ Add Chisel3 asUInt()/asSInt().
+ Flo and Dbl widths are really fixed (and known).
+ Add support for Chisel3-style "testers as hardware".
+ Small documentation fixes and comments/questions
+ Be more selective when re-running to enable line numbers.
+ Fix broken subword support.

@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section id="documentation">
+  <div class="page-header">
+    <h1>Releases</h1>
+  </div>
+
+  <h2>Chisel 2.2.x</h2>
+  {% for release in releases %}
+    <p>
+    <h3>ReleaseNotes for Chisel {{ release['version'] }} {{ release['date'] }}</h3>
+    {% if release['relnotetext'] is defined %}
+      {{ release['relnotetext'] }}
+    {% else %}
+      {% include "releasenotes_" + release['version'] + ".html" %}
+    {% endif %}
+    </p>
+    <p>
+    <h3>ChangeLog for Chisel {{ release['version'] }} {{ release['date'] }}</h3>
+    {% if release['chglogtext'] is defined %}
+      {{ release['chglogtext'] }}
+    {% else %}
+      {% include "changelog_" + release['version'] + ".html" %}
+    {% endif %}
+    </p>
+  {% endfor %}
+</section>
+{% endblock %}
